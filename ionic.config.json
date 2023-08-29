@@ -1,0 +1,8 @@
+{
+  "name": "PreceptorShip",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular",
+  "id": "3d08d446"
+}
