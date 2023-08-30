@@ -14,4 +14,11 @@
   </ion-header>
 
   <app-explore-container name="Tab 1 page"></app-explore-container>
+
+  <ul>
+    <li class="text" *ngFor="let item of terapeutas | async">
+      {{item.nome}}
+    </li>
+  </ul>
+
 </ion-content>

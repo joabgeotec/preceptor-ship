@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { FirebaseService } from '../firebase-service/firebase.service';
+import { Observable } from 'rxjs';
 
 @Component({
   selector: 'app-tab1',
@@ -6,7 +8,14 @@ import { Component } from '@angular/core';
   styleUrls: ['tab1.page.scss']
 })
 export class Tab1Page {
+  terapeutas!: Promise<any[]>
 
-  constructor() {}
+  constructor(private firebaseService: FirebaseService) {}
+
+  ngOnInit() {
+    this.terapeutas = this.firebaseService.getTerapeutas();
+  }
+
+
 
 }

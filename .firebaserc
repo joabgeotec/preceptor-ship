@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "preceptor-ship": {
+      "hosting": {
+        "app": [
+          "preceptor-ship"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "preceptor-ship"
+  }
+}
